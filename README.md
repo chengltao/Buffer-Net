@@ -8,11 +8,11 @@ A deep-learning framework for detecting genus of bacteria was designed. It utili
 
 
 #### model:
-Pretrained weights of the model were saved as *.pth* format. We uploaded it at https://drive.google.com/drive/my-drive. And we suggested that the weight file should be placed in this directory.
+Pretrained weights of the model were saved as *.pth* format. Since it was bigger than 25MB, we uploaded it at https://drive.google.com/drive/my-drive. And we suggested that the weight file should be placed in this directory.
 
 #### BufferNet.py:
 
-The architecture of BufferNet was implemented as a class bufferNet. 
+The architecture of BufferNet was implemented as a class *bufferNet*. 
 
 
 #### BufferNet_main.py:
