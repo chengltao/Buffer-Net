@@ -15,5 +15,8 @@ In this file, loading data, training and testing networks were implemented. The 
 
 Contact:
 Dr. Chenglong Tao: chengltao@126.com
+
 Prof. Dr. Bingliang Hu: hbl@opt.ac.cn
+
 Prof. Dr. Zhoufeng Zhang: zhangzhoufeng@opt.ac.cn
+
