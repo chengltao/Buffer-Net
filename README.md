@@ -19,6 +19,9 @@ The architecture of BufferNet was implemented as a class bufferNet.
 
 In this file, loading data, training and testing networks were implemented. The function, *plot_confusion_matrix*, could be used to present the confusion matrix of classification.
 
+#### requirements.txt：
+The necessary packages were listed.
+
 #### Contact:
 Dr. Chenglong Tao: chengltao@126.com
 
