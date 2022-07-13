@@ -8,7 +8,7 @@ A deep-learning framework for detecting genus of bacteria was designed. It utili
 
 
 #### model:
-Pretrained weights of the model were saved as *.pth* format. Since it was bigger than 25MB, we uploaded it at https://drive.google.com/drive/my-drive. And we suggested that the weight file should be placed in this directory.
+Pretrained weights of the model were saved as *.pth* format. Since it was bigger than 25MB, we uploaded it at https://drive.google.com/file/d/123AYGNOAIKJTWLv6ugSbEZ4RwSK8nN3f/view?usp=sharing. And we suggested that the weight file should be placed in this directory.
 
 #### BufferNet.py:
 
