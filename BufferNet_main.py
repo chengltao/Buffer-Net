@@ -185,21 +185,16 @@ if __name__ == '__main__':
     dataloader_kwargs = {'pin_memory': True} if use_cuda else {}
     print(device)
     model = Buffer().to(device)
-    #ori = torch.load("./CNN_3D_1.pth")
-    #model.load_state_dict(torch.load("./CNN_3D_1.pth"))
-    # 训练
-    #test(model, device)
-    #model["layer1.0.downsampling.weight"] = ori["layer1.1.conv1.weight"]
+    #strat training
     model = train(args, model, device, dataloader_kwargs)
     torch.save(model.state_dict(), "model/BufferNet.pth")
-
     model.load_state_dict(torch.load("model/BufferNet.pth"))
     target, predict_y, g = test(model, device)
     a = np.array(target)
     b = np.array(predict_y)
     accuracy = sum(a == b) / len(target)
     print("accuracy----------", accuracy)
-    with open(r"CNN_3D_transferlearning.txt", "a+") as file:  # ”w"代表着每次运行都覆盖内容
+    with open(r"CNN_3D_transferlearning.txt", "a+") as file:  
         file.write(str(accuracy) + "\n")
     cm = confusion_matrix(target, predict_y, labels=range(0, 11))
     np.set_printoptions(precision=2)
